@@ -32,8 +32,8 @@
     ```bash
     git clone https://github.com/0v3rf3ar/R0b0t.git
     cd R0b0t
-   docker build -t r0b0t .
-   docker run --rm -it r0b0t -h
+   docker build -t 0v3rf3ar/r0b0t .
+   docker run --rm -it 0v3rf3ar/r0b0t -h
     ```
 ## Usage
     usage: R0b0t.py [-u URL] [-l LIMIT] [-t TSLOG] [-v] [--timeout TIMEOUT]
