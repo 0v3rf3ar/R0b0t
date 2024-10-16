@@ -8,6 +8,7 @@
 - **Timestamp log support**: Either generates timestamp files automatically or allows custom `ts.log` file input.
 - **Retry logic**: Automatically retries failed downloads after a 10-second delay.
 - **Timeouts**: Customizable timeout for each download attempt.
+- **Delay**: Delay between downloads so you dont ge blocked by archive.org for donwloading too many files at once.
 - **Verbose mode**: Provides detailed output with progress bars and logs every action taken.
 - **Merging & Sorting**: Merges and sorts the downloaded files, while skipping files with HTML tags.
 
