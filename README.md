@@ -19,7 +19,7 @@
 
 ## Installation Guide
 
-1. Clone the repository:
+1. Normal installation:
     ```bash
     cd  && python3 -m venv venv
     source venv/bin/activate
@@ -28,9 +28,23 @@
     pip3 install -r requirements.txt
     python3 R0b0t.py
     ```
+2. Using Docker
+    ```bash
+    git clone https://github.com/0v3rf3ar/R0b0t.git
+    cd R0b0t
+   docker build -t R0b0t .
+   docker run --rm -it R0b0t -h
+    ```
 ## Usage
+    usage: R0b0t.py [-u URL] [-l LIMIT] [-t TSLOG] [-v] [--timeout TIMEOUT]
 
-### Basic Usage
+    Download robots.txt from the Wayback Machine
 
-```bash
-python R0b0t.py -u target.com -l 5 -v
+    options:
+      -u URL, --url URL     The domain to retrieve robots.txt for
+      -l LIMIT, --limit LIMIT
+                        Limit on the number of timestamps to retrieve
+      -t TSLOG, --tslog TSLOG
+                        Path to a custom ts.log file with timestamps
+      -v, --verbose         Enable verbose mode
+      --timeout TIMEOUT     Set a timeout for each download attempt (default: 5 seconds)
