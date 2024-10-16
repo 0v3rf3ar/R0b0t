@@ -36,15 +36,16 @@
    docker run --rm -it 0v3rf3ar/r0b0t -h
     ```
 ## Usage
-    usage: R0b0t.py [-u URL] [-l LIMIT] [-t TSLOG] [-v] [--timeout TIMEOUT]
+    usage: R0b0t.py [-u URL] [-l LIMIT] [-t TSLOG] [-v] [--timeout TIMEOUT] [--delay DELAY]
 
     Download robots.txt from the Wayback Machine
 
     options:
       -u URL, --url URL     The domain to retrieve robots.txt for
       -l LIMIT, --limit LIMIT
-                        Limit on the number of timestamps to retrieve
+                            Limit on the number of timestamps to retrieve
       -t TSLOG, --tslog TSLOG
-                        Path to a custom ts.log file with timestamps
+                            Path to a custom ts.log file with timestamps
       -v, --verbose         Enable verbose mode
-      --timeout TIMEOUT     Set a timeout for each download attempt (default: 5 seconds)
+      --timeout TIMEOUT     Set a timeout for each download attempt (default: 60 seconds)
+      --delay DELAY         Set a delay (in seconds) between downloading each robots.txt file (default: 5 seconds)
